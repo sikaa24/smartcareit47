@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /c/xampp/htdocs 2>&1 | head -50)",
+      "Read(//c/xampp/htdocs/**)",
+      "Bash(\"/c/xampp/mysql/bin/mysql.exe\" -u root smartcare -e \"SHOW TABLES;\")",
+      "Bash(\"/c/xampp/mysql/bin/mysql.exe\" -u root smartcare -e \"DESCRIBE users;\")",
+      "Bash(\"/c/xampp/mysql/bin/mysql.exe\" -u root smartcare -e \"SELECT * FROM users;\")",
+      "Bash(flutter analyze *)",
+      "Bash(/c/xampp/php/php.exe -r ' *)",
+      "Bash(\"/c/xampp/php/php.exe\" -l \"/c/xampp/htdocs/smartcare.1/api/appointment/update_status.php\")"
+    ]
+  }
+}
